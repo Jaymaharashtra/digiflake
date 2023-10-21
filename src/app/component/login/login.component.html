@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="logo-img">
+        <img src="../../../assets/static/image 289.png" alt="img">
+    </div>
+    <p class="greet-msg">Welcome to DigitalFlake Admin</p>
+
+    <form (ngSubmit)="login()">
+
+        <div class="input-field">
+
+            <input type="text" [(ngModel)]="username" name="username" class="input-log" placeholder=" Email ID">
+            <input type="password" [(ngModel)]="password" name="password" class="input-log" placeholder=" Password">
+            <p  class="forget-pass-link">Forget <a routerLink="forget-password">Password</a> ?</p>
+            <button type="submit">Log In</button>
+          
+            
+        </div>
+    </form>
+
+</div>
+
